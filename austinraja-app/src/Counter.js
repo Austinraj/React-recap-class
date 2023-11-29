@@ -44,7 +44,7 @@ function Counter(){
         dispatch("rec");
     }
 
-    const [name ,setSearch] = React.useState();
+    // const [name ,setSearch] = React.useState();
 
     useEffect(()=>{
     
@@ -65,7 +65,7 @@ function Counter(){
 return(
     <>
     <h3 className="text-warning">Counter Component</h3>
-    <input type="text" value={name} onChange={({target:{value}})=> setSearch(value)}  />
+    {/* <input type="text" value={name} onChange={({target:{value}})=> setSearch(value)}  /> */}
     <h3 className="text-primary">count -{count}</h3>
     <button className="btn btn-primary" onClick={inc}>+</button>{" "}
     <button className="btn btn-warning" onClick={dec}>-</button>{" "}
